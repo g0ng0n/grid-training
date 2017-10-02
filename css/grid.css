@@ -2,5 +2,12 @@
    Grid Layout
 ======================================== */
 
+.grid {
+    max-width: 1fr;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    grid-gap: 15px 20px;
 
+}
 
