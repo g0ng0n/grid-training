@@ -3,11 +3,10 @@
 ======================================== */
 
 .grid {
-    max-width: 1fr;
+    max-width: 1000px;
     display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-columns: repeat(minmax(200px, 1fr));
     grid-template-rows: 100px 200px;
     grid-gap: 15px 20px;
-
 }
 
