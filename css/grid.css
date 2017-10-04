@@ -2,11 +2,31 @@
    Grid Layout
 ======================================== */
 
-.grid {
-    max-width: 1000px;
+.container {
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    grid-template-rows: 100px 200px;
-    grid-gap: 15px 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px minmax(200px, 1fr)  100px;
+    grid-gap: 10px;
+}
+
+header {
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+}
+
+main {
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+}
+
+aside{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
