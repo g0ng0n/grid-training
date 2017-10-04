@@ -8,25 +8,25 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 100px minmax(200px, 1fr)  100px;
     grid-gap: 10px;
+    grid-template-areas:
+            "header header"
+            "main aside"
+            "footer footer";
 }
 
 header {
-    grid-column-start: 1 ;
-    grid-column-end: 3;
+    grid-area: header;
 }
 
 main {
-    grid-row-start: 2 ;
-    grid-row-end: 3;
+    grid-area: main;
 }
 
 aside{
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-area: aside;
 }
 
 footer {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-area: footer;
 }
 
